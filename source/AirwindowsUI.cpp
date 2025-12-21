@@ -1,5 +1,6 @@
 // AirwindowsUI by Chris Johnson
 // Initial seed code for the meter created by Paul Walker on 8/23/21.
+// From then on all this wild stuff is Chris :)
 #include "AirwindowsUI.h"
 
 void AirwindowsLookAndFeel::drawLinearSlider (juce::Graphics& g, int x, int y, int width, int height, float sliderPos, float minSliderPos, float maxSliderPos, const juce::Slider::SliderStyle style, juce::Slider& slider) {
