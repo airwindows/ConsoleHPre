@@ -44,7 +44,7 @@ void AirwindowsLookAndFeel::drawLinearSlider (juce::Graphics& g, int x, int y, i
     juce::Point<float> maxPoint = {slider.isHorizontal()?(sliderPos*0.91f)+(width*0.06f):((float)x+(float)width*0.5f), slider.isHorizontal()?((float)y+(float)height*0.5f):(sliderPos*0.91f)+(height*0.06f)};
     auto thumbWidth = (pow(bevelW,1.72f)*0.83f);
     auto rectSlider = juce::Rectangle<float>(thumbWidth*1.12f, thumbWidth*1.02f).withCentre(maxPoint);
-    if (slider.isHorizontal()) rectSlider = juce::Rectangle(thumbWidth*1.04f, thumbWidth*1.14f).withCentre(maxPoint);
+    if (slider.isHorizontal()) rectSlider = juce::Rectangle<float>(thumbWidth*1.04f, thumbWidth*1.14f).withCentre(maxPoint);
     g.setColour (findColour(juce::ResizableWindow::backgroundColourId)); g.setOpacity(1.0f); g.fillRoundedRectangle (rectSlider, bevelW);
     //solid background for knob so you can't see the track under it
     juce::ColourGradient cg = juce::ColourGradient(juce::Colours::white, rectSlider.getTopLeft(), juce::Colours::black, rectSlider.getBottomRight(),false);
