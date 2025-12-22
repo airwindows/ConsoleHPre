@@ -1,6 +1,6 @@
 // AirwindowsUI by Chris Johnson
 // Initial seed code for the meter created by Paul Walker on 8/23/21.
-// From then on all this wild stuff is Chris :)
+// From then on all this wild stuff is Chris :) 
 //and huge support from Sudara and Pamplejuce!
 #include "AirwindowsUI.h"
 
@@ -158,7 +158,7 @@ void AirwindowsMeter::paint(juce::Graphics &g)
     g.fillRect(0, (int)(175.2f*vS), getWidth(),1); //-36dB markings
     g.fillRect(0, (int)(182.5f*vS), getWidth(),1); //-42dB markings
     
-    for (unsigned long count = 0; count < fmin(displayWidth,2000); ++count) //count through all the points in the array
+    for (unsigned long count = 0; count < fmin(displayWidth,5150); ++count) //count through all the points in the array
     {
         g.setColour(juce::Colours::black);
         float psDotSizeL = 5.0f*dataA[count]*dataA[count];

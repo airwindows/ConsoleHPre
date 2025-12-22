@@ -129,7 +129,7 @@ struct AirwindowsMeter : public juce::Component
 {
     void paint(juce::Graphics &g) override;
     
-    static constexpr int dataPoints = 2000;
+    static constexpr int dataPoints = 5151;
     juce::String displayTrackName = juce::String();
     juce::String displayFont = juce::String();
     int displayWidth = 1280;
@@ -164,7 +164,7 @@ struct AirwindowsMeter : public juce::Component
     void pushL(float X) {blinkenRelease = X;}
     void pushIncrement() {
         dataPosition++;
-        if (dataPosition >= (unsigned long)displayWidth) dataPosition = 0;
+        if (dataPosition >= (unsigned long)fmin(displayWidth,5150)) dataPosition = 0;
     }
 
     void resetArrays(){
