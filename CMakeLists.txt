@@ -18,7 +18,7 @@ include(JUCEDefaults)
 # Note: This cannot have spaces (it may be 2024, but you can't have it all!)
 # Worry not, JUCE's PRODUCT_NAME can have spaces (and is what DAWs display)
 set(PROJECT_NAME "ConsoleHPre")
-set(PRODUCT_NAME "ConsoleHPre")
+set(PRODUCT_NAME "ConsoleH Pre")
 
 # Worry not, JUCE's PRODUCT_NAME can have spaces (and is what DAWs will display)
 # You can also just have it be the same thing as PROJECT_NAME
